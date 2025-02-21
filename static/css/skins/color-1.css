@@ -1,0 +1,22 @@
+:root
+{
+    --skin-color:#2786bd;
+
+}
+@keyframes borderSpin {
+    0% {
+      border-radius: 50px; /* Sudut standar */
+    }
+    40% {
+      border-radius: 50% 50px 50% 50px; /* Bentuk elips bergelombang */
+    }
+    50% {
+      border-radius: 50px 50% 50px 50%; /* Kebalikannya */
+    }
+    75% {
+      border-radius: 50%; /* Lingkaran */
+    }
+    100% {
+      border-radius: 20px; /* Kembali ke bentuk awal */
+    }
+  }

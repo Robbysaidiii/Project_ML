@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/skins/color-1.css') }}">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+    
+    <body>
+    <!--MAIN CONTAINER START-->
+    <div class="maincontainer">
+        <!--Aside start-->
+        <div class="aside">
+           <div class="logo">
+            <a href="#"><span>R</span>obby</a>
+           </div>
+           <div class="nav-toggler">
+            <span></span>
+           </div>
+           <ul class="nav">
+            <li><a href="#" class="active"><i class="fa fa-home"></i>Home</a></li>
+            <li><a href="#"><i class="fa fa-user"></i> About </a></li>
+            <li><a href="#"><i class="fa fa-book-open"></i>  Certificate </a></li>
+            <li><a href="#"><i class="fa fa-briefcase"></i> Portfolio </a></li>
+            <li><a href="#"><i class="fa fa-camera"></i> YOLO </a></li>
+            <li>
+               <a href="#" id="toggleMateri"><i class="fa fa-book"></i>Machine Learning with Dicoding </a>
+               <ul class="submenu" id="materiList">
+                   <li><a href="#" class="materiItem" data-content="Software Development adalah proses pembuatan aplikasi dari awal hingga akhir.">Software Development</a></li>
+                   <li><a href="#" class="materiItem" data-content="Python adalah bahasa pemrograman yang mudah dipelajari dan digunakan.">Python Dasar</a></li>
+                   <li><a href="#" class="materiItem" data-content="Machine Learning adalah cabang dari AI yang memungkinkan komputer belajar dari data.">Pengenalan Machine Learning</a></li>
+                   <li><a href="#" class="materiItem" data-content="Deep Learning adalah bagian dari Machine Learning yang menggunakan jaringan saraf tiruan.">Deep Learning</a></li>
+               </ul>
+           </li>  
+            <li><a href="#"><i class="fa fa-comments"></i> Contact </a></li>   
+        </ul>
+        </div>
+        <!-- Aside end-->
+         <!--Main Content Start-->
+          <div class="main-content">
+            <!--Home Section Start-->
+           <section class="home section ">
+            <div class="container">
+               <div class="row">
+                  <div class="home-info padd-15">
+                     <h3 class="hello">Nama Saya <span class="name">Robby Saidi Praetyo</span></h3>
+                    <h3 class="my-profession">robby<span class="typing">Back-End dan Machine Learning </span> </h3>
+                   <p>Saya adalah seorang mahasiswa yang sedang mendalami bidang pengembangan Back-End dan Machine Learning.
+                      Meskipun saya masih dalam tahap pembelajaran, saya memiliki semangat untuk mengembangkan keterampilan saya di kedua bidang ini, 
+                      dan saya terus berusaha untuk memahami konsep-konsep teknis yang mendalam.</p>
+                      <a href="#contact" class="btn hire-me" >About Me</a>
+                  </div>
+                  <div class="home-img padd-15">
+                     <img src="{{ url_for('static', filename='images/Robby.jpg') }}" alt="Robby">
+                  </div>
+               </div>
+            </div>
+           </section>
+             <!--Home Section end-->
+              <!--about Section end-->
+              <section class="about section ">
+               <div class="container">
+                  <div class="row">
+                     <div class="section-title padd-15">
+                        <h2>About Me</h2>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="about-content padd-15">
+                       <div class="row">
+                        <div class="about-text padd-15">
+                        <h3>saya adalah Robby saidi dan <span>Back-End, Machine Learning</span></h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            It has survived not only five centuries,
+                            but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                             and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                       </div>
+                     </div>
+                     <div class="row">
+                        <div class="personal-info ">
+                           <div class="row">
+                              <div class="info-item padd-15">
+                                 <p> tanggal lahir:<span>11 Sep 2002</span></p>
+                              </div>
+                              <div class="info-item">
+                                 <p> Universitas: <span> Indraprasta PGRI </span></p>
+                              </div>
+                              <div class="info-item padd-15">
+                                 <p> Kota: <span> Jakarta Selatan  </span></p>
+                              </div>
+                              <div class="info-item">
+                                 <p>email: <span><a href="mailto:robbysaidiii@gmail.com">robbysaidiii@gmail.com</a></span></p>
+                              </div>
+                              <div class="info-item padd-15">
+                                 <p> Umur: <span> 23 </span></p>
+                              </div>
+                              <div class="info-item">
+                                 <p>Instagram:<span><a href="https://www.instagram.com/robbysaidiiiii" target="_blank">https://www.instagram.com/robbysaidiiiii</a></span></p>
+                              </div>
+                              <div class="info-item padd-15">
+                                 <p> Phone: <span> 085772275452 </span></p>
+                              </div>
+                              <div class="info-item">
+                                 <p>LinkedIn: <span><a href="https://www.linkedin.com/in/robysaidiprasetyo" target="_blank">https://www.linkedin.com/in/robysaidiprasetyo</a></span></p>
+                              </div>
+                              <div class="info-item padd-15">
+                                 <p> Website: <span> https://web-kelas-rd-136s.vercel.app</span></p>
+                              </div>
+                              <div class="info-item ">
+                                <p>GitHub: <span><a href="https://github.com/Robbysaidiii" target="_blank">https://github.com/Robbysaidiii</a></span></p>
+                              </div>
+                           </div>
+                           <div class="row">
+                              <div class="buttons padd-15">
+                                 <a href="#" class="btn">Download CV</a>
+                                 <a href="#contact" class="btn hire-me">Hire-me</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="skills">
+                           <div class="row">
+                              <div class="skill-item padd-15">
+                                 <h5>HTML</h5>
+                                 <div class="progress">
+                                    <div class="progress-in" style="width: 60%;"></div>
+                                    <div class="skill-precent">60%</div>
+                                 </div>
+                              </div>
+                              <div class="skill-item padd-15">
+                                 <h5>CSS</h5>
+                                 <div class="progress">
+                                    <div class="progress-in" style="width: 79%;"></div>
+                                    <div class="skill-precent">79%</div>
+                                 </div>
+                              </div>
+                              <div class="skill-item padd-15">
+                                 <h5>Python</h5>
+                                 <div class="progress">
+                                    <div class="progress-in" style="width: 76%;"></div>
+                                    <div class="skill-precent">76%</div>
+                                 </div>
+                              </div>
+                              <div class="skill-item padd-15">
+                                 <h5>rust</h5>
+                                 <div class="progress">
+                                    <div class="progress-in" style="width: 78%;"></div>
+                                    <div class="skill-precent">78%</div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                     </div>
+                     <div class="row">
+                       <div class="education padd-15">
+                        <h3 class="title">Education</h3>
+                        <div class="row">
+                           <div class="timeline-box ">
+                              <div class="timeline shadow-dark">
+                                    <!--timeline--> 
+                                 <div class="timeline-item">
+                                    <div class="circle-dot"></div>
+                                    <h3 class="timeline-date">
+                                       <i class="fa fa-calendar"></i> 2013 -2025
+                                    </h3>
+                                        <h4 class="timeline-title">Teknik compuer</h4>
+                                        <p class="timeline-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                          It has survived not only five centuries,
+                                          but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                                           and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p> 
+                                 </div>   
+                                 <div class="timeline-item">
+                                    <div class="circle-dot"></div>
+                                    <h3 class="timeline-date">
+                                       <i class="fa fa-calendar"></i> 2013 -2025
+                                    </h3>
+                                        <h4 class="timeline-title">Teknik compuer</h4>
+                                        <p class="timeline-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                          It has survived not only five centuries,
+                                          but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                                           and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                    
+                                 </div>
+                                 <div class="timeline-item">
+                                    <div class="circle-dot"></div>
+                                    <h3 class="timeline-date">
+                                       <i class="fa fa-calendar"></i> 2013 -2025
+                                    </h3>
+                                        <h4 class="timeline-title">Teknik compuer</h4>
+                                        <p class="timeline-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                          It has survived not only five centuries,
+                                          but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                                           and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>             
+                                 </div>   
+                              </div>
+                           </div>
+                        </div>
+                       </div> 
+                     <div class="experience padd-15">
+                        <h3 class="title">Experience</h3>
+                        <div class="row">
+                           <div class="timeline-box ">
+                              <div class="timeline shadow-dark">
+                                    <!--timeline--> 
+                                 <div class="timeline-item">
+                                    <div class="circle-dot"></div>
+                                    <h3 class="timeline-date">
+                                       <i class="fa fa-calendar"></i> 2013 -2025
+                                    </h3>
+                                        <h4 class="timeline-title">Teknik compuer</h4>
+                                        <p class="timeline-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                          It has survived not only five centuries,
+                                          but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                                           and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p> 
+                                 </div>   
+                                 <div class="timeline-item">
+                                    <div class="circle-dot"></div>
+                                    <h3 class="timeline-date">
+                                       <i class="fa fa-calendar"></i> 2013 -2025
+                                    </h3>
+                                        <h4 class="timeline-title">Teknik compuer</h4>
+                                        <p class="timeline-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                          It has survived not only five centuries,
+                                          but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                                           and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                    
+                                 </div>
+                                 <div class="timeline-item">
+                                    <div class="circle-dot"></div>
+                                    <h3 class="timeline-date">
+                                       <i class="fa fa-calendar"></i> 2013 -2025
+                                    </h3>
+                                        <h4 class="timeline-title">Teknik compuer</h4>
+                                        <p class="timeline-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                          It has survived not only five centuries,
+                                          but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                                           and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>             
+                                 </div>   
+                              </div>
+                           </div>
+                        </div>
+                       </div> 
+                     </div>
+                  </div>
+                  </div>
+               </div>
+              </section>
+               <!--about Section end-->
+               <!--Service section-->
+               <section class="service section padd-15">
+                  <div class="container">
+                   <div class="row">
+                     <div class="section-title padd-15">
+                        <h2>Certificate</h2>
+                     </div>
+                   </div>
+                   <div class="row">
+                     <!--Service item start-->
+                     <div class="service-item padd-15">
+                        <div class="service-item-inner">
+                           <div class="icon">
+                              <i class="fa fa-laptop-code"></i>
+                           </div>
+                           <h4>Website</h4>
+                           <p>Loren, ipsum dolor sit amet consectektur adipsicing elit, nihil velit ab itaque.
+                           </p>
+                        </div>
+                     </div>
+                     <div class="service-item padd-15">
+                        <div class="service-item-inner">
+                           <div class="icon">
+                              <i class="fa fa-search"></i>
+                           </div>
+                           <h4>Website</h4>
+                           <p>Loren, ipsum dolor sit amet consectektur adipsicing elit, nihil velit ab itaque.
+                           </p>
+                        </div>
+                     </div>
+                     <div class="service-item padd-15">
+                        <div class="service-item-inner">
+                            <div class="icon">
+                              <a href="https://www.hackerrank.com/certificates/52246cc13fc7" target="_blank">
+                                 <img src="{{ url_for('static', filename='images/Hackerrank.png') }}" alt="Hackerrank" class="gambar-serviceq">
+                             </a>
+                            </div>
+                            <h4><a href="https://www.hackerrank.com/certificates/52246cc13fc7" target="_blank">HackerRank Certificates</a></h4>
+                            <br>
+                            <p> telah berhasil menyelesaikan pelatihan Python Basic di HackerRank dan memperoleh sertifikat sebagai bukti kompetensi yang diperoleh.</p>
+                        </div>
+                    </div>
+                     <div class="service-item padd-15">
+                        <div class="service-item-inner">
+                            <div class="icon">
+                              <a href="https://learn.microsoft.com/id-id/users/robbysaidiprasetyo-3318/achievements" target="_blank">
+                                 <img src="{{ url_for('static', filename='images/elevAIte.png') }}" alt="elevAIte" class="gambar-serviceee">
+                             </a>
+                            </div>
+                            <h4><a href="https://learn.microsoft.com/id-id/users/robbysaidiprasetyo-3318/achievements" target="_blank">Peghargaan elevAIte with Dicoding Program 2025 di Microsoft Learn.</a></h4>
+                            <br>
+                            <p>Pembelajaran dimulai dengan eksplorasi dasar tentang Machine Learning dan pengelolaan data pada tingkat Menengah, kemudian berlanjut ke tingkat Mahir dengan fokus pada desain dan implementasi solusi AI kompleks menggunakan teknik deep learning serta proyek dunia nyata.</p>
+                        </div>
+                    </div>
+                    <div class="service-item padd-15">
+                     <div class="service-item-inner">
+                         <div class="icon">
+                             <a href="https://drive.google.com/file/d/1uK8RQjasTxUEkkxZn0wXQzTJ3mJlzY81/view" target="_blank">
+                                 <img src="{{ url_for('static', filename='images/KampusMerdeka.png') }}" alt="Kampus" class="gambar-servicee">
+                             </a>
+                         </div>
+                         <h4>
+                             <a href="https://drive.google.com/file/d/1uK8RQjasTxUEkkxZn0wXQzTJ3mJlzY81/view" target="_blank">
+                                 Sertifikat Kampus Merdeka
+                             </a>
+                         </h4>
+                         <br>
+                         <p>Telah successfully menyelesaikan program Kampus Merdeka dan memperoleh sertifikat sebagai bukti pencapaian.</p>
+                     </div>
+                 </div>
+                 
+                 <div class="service-item padd-15">
+                  <div class="service-item-inner">
+                      <div class="icon">
+                          <a href="https://drive.google.com/drive/folders/1h00cA9i_QrTIxlXXK2WPnoupJdCYG2pa" target="_blank">
+                              <img src="{{ url_for('static', filename='images/Orbit.png') }}" alt="Kampus" class="gambar-servicee">
+                          </a>
+                      </div>
+                      <h4>
+                          <a href="https://drive.google.com/drive/folders/1h00cA9i_QrTIxlXXK2WPnoupJdCYG2pa" target="_blank">
+                              Sertifikat Kampus Merdeka
+                          </a>
+                      </h4>
+                      <br>
+                      <p>Telah successfully menyelesaikan program Kampus Merdeka dan memperoleh sertifikat sebagai bukti pencapaian.</p>
+                  </div>
+              </div>       
+                 <!--Service item end-->
+                   </div>
+                  </div>
+               </section>
+
+               <section class="portofolio section padd-15">
+                  <div class="container">
+                     <div class="row">
+                        <div class="section-title padd-15">
+                           <h2>Portofolio</h2>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="card">
+                           <a href="https://drive.google.com/drive/folders/1h00cA9i_QrTIxlXXK2WPnoupJdCYG2pa" target="_blank">
+                              <img src="{{ url_for('static', filename='images/r.png') }}" alt="Kampus" class="gambar-servicee">
+                          </a>
+                           <div class="card-body">
+                              <a href="https://absensi-hrnsmccr6supvvxp3arorn.streamlit.app/" >
+                             <h4 class="card-title">Project Absensi</h4>
+                           </a>
+                             <p class="card-text">Proyek ini adalah sistem absensi otomatis yang menggunakan teknologi pengenalan wajah. Dengan bantuan OpenCV,
+                               TensorFlow, dan model deep learning seperti Histogram Of Gradient + KNN, sistem ini bisa mengenali wajah karyawan atau mahasiswa untuk mencatat kehadiran secara real-time.</p>
+                           </div>
+                             <div class="-table">
+                           <h4 class="judul">Teknologi yang Digunakan</h4>
+
+                           <table>
+                               <tr>
+                                   <th>Teknologi</th>
+                                   <th>Status</th>
+                               </tr>
+                               <tr>
+                                   <td>Streamlit</td>
+                                   <td><i class="fa fa-check"></i></td>
+                               </tr>
+                               <tr>
+                                   <td>OpenCV</td>
+                                   <td><i class="fa fa-check"></i></td>
+                               </tr>
+                               <tr>
+                                 <td>Xampp</td>
+                                 <td><i class="fa fa-check"></i></td>
+                             </tr>
+                               <tr>
+                                   <td>TensorFlow</td>
+                                   <td><i class="fa fa-check"></i></td>
+                               </tr>
+                               <tr>
+                                   <td><a href="https://colab.research.google.com/drive/1-r82sbFHunp2Pc3aOoCKtBao7-0N2ozv">Histogram Of Gradient + KNN</a></td>
+                                   <td><i class="fa fa-check"></i></td>
+                               </tr>
+                           </table>
+                        </div>
+                           <div class="card-">
+                             <a href="https://github.com/Robbysaidiii" class="card-link">GitHub</a>
+                             <a href="https://colab.research.google.com/drive/1-r82sbFHunp2Pc3aOoCKtBao7-0N2ozv" class="card-link">Model</a>
+                           </div>
+                         </div>
+
+                         <div class="card">
+                           <a href="https://drive.google.com/drive/folders/1h00cA9i_QrTIxlXXK2WPnoupJdCYG2pa" target="_blank">
+                              <img src="{{ url_for('static', filename='images/r.png') }}" alt="Kampus" class="gambar-servicee">
+                          </a>
+                           <div class="card-body">
+                              <a href="https://absensi-hrnsmccr6supvvxp3arorn.streamlit.app/" >
+                             <h4 class="card-title">Project Absensi</h4>
+                           </a>
+                             <p class="card-text">Proyek ini adalah sistem absensi otomatis yang menggunakan teknologi pengenalan wajah. Dengan bantuan OpenCV,
+                               TensorFlow, dan model deep learning seperti Histogram Of Gradient + KNN, sistem ini bisa mengenali wajah karyawan atau mahasiswa untuk mencatat kehadiran secara real-time.</p>
+                           </div>
+                             <div class="-table">
+                           <h4 class="judul">Teknologi yang Digunakan</h4>
+
+                           <table>
+                               <tr>
+                                   <th>Teknologi</th>
+                                   <th>Status</th>
+                               </tr>
+                               <tr>
+                                   <td>Streamlit</td>
+                                   <td><i class="fa fa-check"></i></td>
+                               </tr>
+                               <tr>
+                                   <td>OpenCV</td>
+                                   <td><i class="fa fa-check"></i></td>
+                               </tr>
+                               <tr>
+                                 <td>Xampp</td>
+                                 <td><i class="fa fa-check"></i></td>
+                             </tr>
+                               <tr>
+                                   <td>TensorFlow</td>
+                                   <td><i class="fa fa-check"></i></td>
+                               </tr>
+                               <tr>
+                                   <td><a href="https://colab.research.google.com/drive/1-r82sbFHunp2Pc3aOoCKtBao7-0N2ozv">Histogram Of Gradient + KNN</a></td>
+                                   <td><i class="fa fa-check"></i></td>
+                               </tr>
+                           </table>
+                        </div>
+                           <div class="card-">
+                             <a href="https://github.com/Robbysaidiii" class="card-link">GitHub</a>
+                             <a href="https://colab.research.google.com/drive/1-r82sbFHunp2Pc3aOoCKtBao7-0N2ozv" class="card-link">Model</a>
+                           </div>
+                         </div>
+                     </div>
+                     
+                     
+                     
+                  </div>
+               </section>
+                <!--Service section End -->
+                <section class="kamera section padd-15">
+                  <div class="container">
+                      <div class="row">
+                          <div class="section-title padd-15">
+                              <h2>Kamera Detection</h2>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <video id="video" width="640" height="480" autoplay></video>
+                      </div>
+                      <form class="msger-inputarea">
+                          <input type="text" class="msger-input" id="textInput" placeholder="Masukkan pesanmu disini...">
+                          <button type="submit" class="msger-send-btn">Kirim</button>
+                      </form>
+                      <div class="baru">
+                          <button id="startBtn">Mulai Kamera</button>
+                          <button id="stopBtn" disabled>Stop Kamera</button>
+                      </div>
+                  </div>
+              </section>
+          
+          </div>
+         <!--Main content end -->
+    </div>
+    <!--MAIN CONTAINER END -->
+
+    <!--Js file-->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    </body>
+    
+    </html>
